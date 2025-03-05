@@ -62,7 +62,6 @@ def select_destination():
             path = find_shortest_path("mapped_environment.png", tuple(position), destination)
             for point in path:
                 cv2.circle(image, point, 2, (0, 0, 255), -1)
-            cv2.imshow("Path", image)
     
     cv2.setMouseCallback("Select Destination", get_click)
     cv2.waitKey(0)
